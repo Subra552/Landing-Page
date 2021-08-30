@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src=".//Images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </header>
+        <div class="className">
+            <div class="textbox">
+                <h2>That's what<br><span>I Like</span></h2>
+                <p>Pepsi was introduced to the market in 1893 as “Brad’s Drink”. The founder of Pepsi-Cola, Caleb Bradham, was a drug store owner. They initially intended the drink for people with digestion problems or stomachache.  
+                The name “Pepsi-Cola” was a derivative from pepsin, a digestive enzyme, kola nuts, and vanilla and sugar.</p>
+                <a href="#">View all Products</a>
+            </div>
+            <div class="imagebox">
+                <img src=".//Images/pepsi001.png" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./Images/pepsi001.png" onclick="imgslider('./Images/pepsi001.png');changeBgColor('#0062be')"></li>
+            <li><img src="./Images/pepsi002.png" onclick="imgslider('./Images/pepsi002.png');changeBgColor('#e60c2c')"></li>
+            <li><img src="./Images/pepsi003.png" onclick="imgslider('./Images/pepsi003.png');changeBgColor('#1e1e1e');"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./Images/instagram.png"></a></li>
+            <li><a href="#"><img src="./Images/Twitter-Splash.png"></a></li>
+            <li><a href="#"><img src="./Images/Linkedin.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+     function imgslider(anything){
+         document.querySelector('.pepsi').src= anything;
+     }
+     function changeBgColor(color){
+         const sec = document.querySelector('.sec');
+         sec.style.backgroundColor = color;
+     }
+    </script>
+
+    
+</body>
+</html>

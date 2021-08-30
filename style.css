@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    position: relative;
+    width: 90%;
+    min-height: 74.5vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0062be;
+    transition: 0.5s;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    padding: 25px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    max-width: 190px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style-type: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+header ul li:hover{
+    transform: translateY(-30px);
+}
+
+header ul li a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    font-size:20px;
+    text-decoration: none;
+}
+
+.className{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.className .textbox{
+    position: relative;
+    max-width: 700px;
+}
+
+.className .textbox h2{
+    color: #fff;
+    font-size:2em;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: blink 4s linear infinite;
+}
+
+@keyframes blink{
+    0%{opacity:0;}
+    50%{opacity:0.5;}
+    100%{opacity:1;}
+}
+
+.className .textbox h2 span{
+    font-size:3em;
+    line-height: 1em;
+    
+}
+
+.className .textbox p{
+    color: #fff;
+    font-size:1.5em;   
+}
+
+.className .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background:#fff;
+    color: #111;
+    border-radius: 40px;
+    font-weight:500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.className .imagebox{
+    width: 100px; 
+    display: flex;
+    padding-right: 150px;
+    margin-top: 25px;
+    justify-content: flex-end;
+}
+
+.className .imagebox img{
+    max-width: 500px;
+}
+
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li:hover{
+    transform: translateY(-50px);
+}
+
+.thumb li img{
+    max-width: 40px;
+}
+
+.sci img{
+    height: 70px;
+    width: 70px;
+    
+}
+
+.sci li{
+    list-style: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.sci li:hover{
+    transform: translateX(-30px);
+}
